@@ -28,16 +28,18 @@ public class Diezxciento {
 		if (sueldoAnual > 17864280 && (sueldoAnual < 29773800)){
 			inpuesto =  0.08f;
 		}else if(sueldoAnual > 29700000 && (sueldoAnual < 41600000)){
+			System.out.println("ingresó al else");
 			inpuesto = 0.135f;
 		}
 		
 		System.out.println("Sueldo Anual: "+sueldoAnual); 
-		System.out.println("Inpuesto"+inpuesto); 
+		System.out.println("Impuesto: "+inpuesto); 
 		return inpuesto;
 	}
 	
-	public int saldoAhorro() {
+	public int saldoAhorro(int ahorro) {
 		double noventaxciento = ahorro * 0.9;
+		System.out.println("Saldo Ahorro: "+noventaxciento);
 		return (int) noventaxciento;
 	}
 
